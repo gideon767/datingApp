@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Matcher</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Find Your Match 💕</h2>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="number" id="age" placeholder="Your Age" required>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <input type="text" id="interests" placeholder="Enter interests (comma separated)" required>
+        <button onclick="addUser()">Join</button>
+        <button onclick="findMatch()">Find a Match</button>
+        <button onclick="deleteUser()">Delete User</button>
+        <div class="matches" id="matches"></div>
+    </div>
+    <div class="rules">
+        <h3>Rules for Matching</h3>
+        <ul>
+            <li>Users must be of opposite genders.</li>
+            <li>Must have at least one common interest.</li>
+            <li>Age difference must be 10 years or less.</li>
+            <li>Add more users to increase match chances!</li>
+        </ul>
+    </div>
+</body>
+</html>
